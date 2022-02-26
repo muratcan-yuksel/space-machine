@@ -20,8 +20,14 @@ import {
 
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
 import { ThemeProvider, createTheme } from "@material-ui/core";
+//components
 import NavbarComponent from "./components/NavbarComponent";
-import Button from "react-bootstrap/Button";
+
+//bootstrap components
+import { Button, Container, Row, Col } from "react-bootstrap";
+
+//assets
+import landingImg from "./assets/greenplanet.svg";
 
 const theme = createTheme({
   palette: {
@@ -62,24 +68,55 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div className="mainComponent">
       <NavbarComponent />
+      {/* landing component starts */}
 
-      <ThemeProvider theme={theme}>
-        <ConnectionProvider endpoint={endpoint}>
-          <WalletProvider wallets={wallets} autoConnect>
-            <WalletDialogProvider>
-              <Minter
-                candyMachineId={candyMachineId}
-                connection={connection}
-                startDate={startDateSeed}
-                txTimeout={txTimeout}
-                rpcHost={rpcHost}
-              />
-            </WalletDialogProvider>
-          </WalletProvider>
-        </ConnectionProvider>
-      </ThemeProvider>
+      <Container>
+        <Row>
+          <Col xs={12} md={6} className="columns">
+            <img src={landingImg} alt="" />
+          </Col>
+          <Col xs={12} md={6} className="columns">
+            {" "}
+            <Row className="columns d-flex justify-content-center">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              neque cupiditate aliquid natus, magnam rerum aut dicta dolores?
+              Nisi numquam fugiat placeat delectus eveniet obcaecati ad a fugit
+              libero aliquam!
+            </Row>{" "}
+            <Row className="columns d-flex justify-content-center">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              neque cupiditate aliquid natus, magnam rerum aut dicta dolores?
+              Nisi numquam fugiat placeat delectus eveniet obcaecati ad a fugit
+              libero aliquam!
+            </Row>{" "}
+            <Row className="columns d-flex justify-content-center">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              neque cupiditate aliquid natus, magnam rerum aut dicta dolores?
+              Nisi numquam fugiat placeat delectus eveniet obcaecati ad a fugit
+              libero aliquam!
+            </Row>{" "}
+            <div className="connectButton">
+              <ThemeProvider theme={theme}>
+                <ConnectionProvider endpoint={endpoint}>
+                  <WalletProvider wallets={wallets} autoConnect>
+                    <WalletDialogProvider>
+                      <Minter
+                        candyMachineId={candyMachineId}
+                        connection={connection}
+                        startDate={startDateSeed}
+                        txTimeout={txTimeout}
+                        rpcHost={rpcHost}
+                      />
+                    </WalletDialogProvider>
+                  </WalletProvider>
+                </ConnectionProvider>
+              </ThemeProvider>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };
