@@ -20,6 +20,8 @@ import {
 
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
 import { ThemeProvider, createTheme } from "@material-ui/core";
+import NavbarComponent from "./components/NavbarComponent";
+import Button from "react-bootstrap/Button";
 
 const theme = createTheme({
   palette: {
@@ -61,6 +63,8 @@ const App = () => {
 
   return (
     <div>
+      <NavbarComponent />
+
       <ThemeProvider theme={theme}>
         <ConnectionProvider endpoint={endpoint}>
           <WalletProvider wallets={wallets} autoConnect>
