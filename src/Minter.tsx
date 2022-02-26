@@ -33,6 +33,7 @@ import {
   MintPublicSaleCustomHTML,
 } from "./userSettings";
 
+//this is where you style the initial connect button
 const ConnectButton = styled(WalletDialogButton)`
   position: absolute;
   left: 0px;
@@ -180,7 +181,7 @@ const Home = (props: HomeProps) => {
       }
       console.log("wallet connected");
       if (anchorWallet.publicKey) {
-        setPublicKey(anchorWallet.publicKey)
+        setPublicKey(anchorWallet.publicKey);
       }
 
       // try {
@@ -214,20 +215,17 @@ const Home = (props: HomeProps) => {
 
   useEffect(() => {
     async function getTokenAmount() {
-      if (
-        publicKey &&
-        candyMachine?.state.whitelistMintSettings?.mint
-      ) {
+      if (publicKey && candyMachine?.state.whitelistMintSettings?.mint) {
         try {
           const tokenAmount =
-            await props.connection.getParsedTokenAccountsByOwner(
-              publicKey,
-              { mint: candyMachine?.state.whitelistMintSettings?.mint }
-            );
+            await props.connection.getParsedTokenAccountsByOwner(publicKey, {
+              mint: candyMachine?.state.whitelistMintSettings?.mint,
+            });
 
-          return tokenAmount.value[0].account.data.parsed.info.tokenAmount.amount
+          return tokenAmount.value[0].account.data.parsed.info.tokenAmount
+            .amount;
         } catch {
-          return 0
+          return 0;
         }
       }
     }
@@ -235,11 +233,14 @@ const Home = (props: HomeProps) => {
     getTokenAmount().then((wlToken) => {
       setWhiteListTokenBalance(wlToken);
       if (candyMachine?.state.whitelistMintSettings?.discountPrice && wlToken) {
-        setPrice(candyMachine?.state.whitelistMintSettings?.discountPrice.toNumber() / 1000000000);
+        setPrice(
+          candyMachine?.state.whitelistMintSettings?.discountPrice.toNumber() /
+            1000000000
+        );
       } else if (candyMachine?.state.price) {
         setPrice(candyMachine?.state.price.toNumber() / 1000000000);
       }
-    })
+    });
 
     if (candyMachine?.state.itemsAvailable) {
       setItemsAvailable(candyMachine?.state.itemsAvailable);
@@ -250,7 +251,6 @@ const Home = (props: HomeProps) => {
     } else {
       setMintingTotal(candyMachine?.state.itemsRedeemed);
     }
-
   }, [candyMachine, publicKey, props.connection]);
 
   const phase = getPhase(candyMachine);
@@ -320,8 +320,8 @@ const Home = (props: HomeProps) => {
 
                     <div className="text-end">
                       {(phase === Phase.Welcome && welcomeSettings.showPrice) ||
-                        phase === Phase.WhiteListMint ||
-                        phase === Phase.PublicMint ? (
+                      phase === Phase.WhiteListMint ||
+                      phase === Phase.PublicMint ? (
                         <>
                           {price ? (
                             <p>{price} Sol</p>
@@ -342,9 +342,9 @@ const Home = (props: HomeProps) => {
                   ) : (
                     <MintContainer>
                       {candyMachine?.state.isActive &&
-                        candyMachine?.state.gatekeeper &&
-                        wallet.publicKey &&
-                        wallet.signTransaction ? (
+                      candyMachine?.state.gatekeeper &&
+                      wallet.publicKey &&
+                      wallet.signTransaction ? (
                         <GatewayProvider
                           wallet={{
                             publicKey:

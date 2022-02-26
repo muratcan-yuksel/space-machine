@@ -49,7 +49,6 @@ export const mintPanic = {
 ///                             ///
 
 export const welcomeSettings: WelcomeSettings = {
-
   //Title and Description
   title: "Welcome!",
   desc: "Connect your wallet and load in! Whitelist mint starts soon!",
@@ -73,17 +72,13 @@ export class MintWelcomeCustomHTML extends React.Component {
       <div className="custom-mint-container">
         {/* Add Custom HTML code for Welcome Here! */}
 
-        
         <p>Test 1</p>
-        
-        
+
         {/* End */}
       </div>
     );
   }
 }
-
-
 
 ///                             ///
 ///   Whitelist Sale Settings   ///
@@ -113,23 +108,19 @@ export const whitelistSettings: WhitelistSettings = {
   enableCustomHTML: false,
 };
 
-
 export class MintWhitelistCustomHTML extends React.Component {
   render() {
     return (
       <div className="custom-mint-container">
         {/* Add Custom HTML code for Whitelist Stage Here! */}
 
-        
         <p>Test 2</p>
-        
-        
+
         {/* End */}
       </div>
     );
   }
 }
-
 
 ///                             ///
 ///     Public Sale Settings    ///
@@ -158,10 +149,8 @@ export class MintPublicSaleCustomHTML extends React.Component {
       <div className="custom-mint-container">
         {/* Add Custom HTML code for Public Minting Here! */}
 
-        
         <p>Test 3</p>
-        
-        
+
         {/* End */}
       </div>
     );
