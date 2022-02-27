@@ -19,27 +19,49 @@ const Roadmap = () => {
             facilis possimus?
           </Col>
           {/* first col group */}
-          <Col className="d-flex justify-content-center">
-            <Row>
-              {" "}
-              <Col xs={12} sm={6} className="roadmapImgCol">
-                <img src={secondImg} alt="" className="roadmapImg" />
-              </Col>
-              <Col xs={12} sm={6} className="roadmapCard ">
-                <Col className="cardTitle title d-flex justify-content-center">
-                  LOREM IPSUM
+          <Col xs={12} className="roadmapCol d-flex justify-content-center">
+            <div className="roadmapCol">
+              <Row>
+                {" "}
+                <Col xs={12} sm={6} className="roadmapImgCol">
+                  <img src={secondImg} alt="" className="roadmapImg" />
                 </Col>
-                <Col className="cardPara para d-flex justify-content-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Expedita adipisci nobis quos rem soluta dolorum aperiam
-                  deserunt dolores similique at sint culpa deleniti a provident,
-                  reprehenderit ducimus iste officia saepe?
+                <Col xs={12} sm={6} className="roadmapCard ">
+                  <Col className="cardTitle title d-flex justify-content-center">
+                    LOREM IPSUM
+                  </Col>
+                  <Col className="cardPara para d-flex justify-content-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Expedita adipisci nobis quos rem soluta dolorum aperiam
+                    deserunt dolores similique at sint culpa deleniti a
+                    provident, reprehenderit ducimus iste officia saepe?
+                  </Col>
                 </Col>
-              </Col>
-            </Row>
+              </Row>
+            </div>
           </Col>
           {/* second col group */}
-
+          <Col xs={12} className="roadmapCol d-flex justify-content-center">
+            <div className="roadmapCol">
+              <Row>
+                {" "}
+                <Col xs={12} sm={6} className="roadmapCard ">
+                  <Col className="cardTitle title d-flex justify-content-center">
+                    LOREM IPSUM
+                  </Col>
+                  <Col className="cardPara para d-flex justify-content-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Expedita adipisci nobis quos rem soluta dolorum aperiam
+                    deserunt dolores similique at sint culpa deleniti a
+                    provident, reprehenderit ducimus iste officia saepe?
+                  </Col>
+                </Col>
+                <Col xs={12} sm={6} className="roadmapImgCol">
+                  <img src={secondImg} alt="" className="roadmapImg" />
+                </Col>
+              </Row>{" "}
+            </div>
+          </Col>
           {/* third col group */}
 
           {/* fourth col group */}

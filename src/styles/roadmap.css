@@ -7,7 +7,9 @@
     rgba(45, 110, 204, 1) 100%
   );
 }
-
+.roadmapCol {
+  margin-bottom: 5rem;
+}
 .roadmapImgCol {
   width: auto;
   height: 20rem;
@@ -26,6 +28,7 @@
     rgba(45, 13, 42, 1) 75%,
     rgba(22, 32, 47, 1) 100%
   );
+  border-radius: 1rem;
 }
 .cardTitle {
   margin-bottom: 0 !important;
