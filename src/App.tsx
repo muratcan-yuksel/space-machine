@@ -28,6 +28,7 @@ import Purpose from "./components/Purpose";
 import SecondCollection from "./components/SecondCollection";
 import WhySolana from "./components/WhySolana";
 import ThirdCollection from "./components/ThirdCollection";
+import Roadmap from "./components/Roadmap";
 import FAQ from "./components/FAQ";
 
 //bootstrap components
@@ -160,6 +161,7 @@ const App = () => {
       <SecondCollection />
       <WhySolana />
       <ThirdCollection />
+      <Roadmap />
 
       <FAQ />
     </div>
