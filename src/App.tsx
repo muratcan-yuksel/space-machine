@@ -26,7 +26,7 @@ import Introduction from "./components/Introduction";
 import FirstCollection from "./components/FirstCollection";
 import Purpose from "./components/Purpose";
 import SecondCollection from "./components/SecondCollection";
-
+import WhySolana from "./components/WhySolana";
 //bootstrap components
 import { Button, Container, Row, Col } from "react-bootstrap";
 
@@ -155,6 +155,7 @@ const App = () => {
       <FirstCollection />
       <Purpose />
       <SecondCollection />
+      <WhySolana />
     </div>
   );
 };
