@@ -24,6 +24,7 @@ import { ThemeProvider, createTheme } from "@material-ui/core";
 import NavbarComponent from "./components/NavbarComponent";
 import Introduction from "./components/Introduction";
 import FirstCollection from "./components/FirstCollection";
+import Purpose from "./components/Purpose";
 
 //bootstrap components
 import { Button, Container, Row, Col } from "react-bootstrap";
@@ -151,6 +152,7 @@ const App = () => {
       {/* introduction component */}
       <Introduction />
       <FirstCollection />
+      <Purpose />
     </div>
   );
 };

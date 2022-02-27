@@ -21,7 +21,7 @@ const FirstCollection = () => {
       </Row>
 
       {/* second row */}
-      <Row>
+      {/* <Row>
         <Col className="collectionCol">
           <img className="collectionImg" src={firstImg} alt="" />
         </Col>
@@ -31,7 +31,7 @@ const FirstCollection = () => {
         <Col className="collectionCol">
           <img className="collectionImg" src={thirdImg} alt="" />
         </Col>
-      </Row>
+      </Row> */}
     </div>
   );
 };

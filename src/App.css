@@ -1,6 +1,8 @@
 @font-face {
   font-family: titleFont;
   src: url("./assets/fonts/Megrim-Regular.ttf");
+}
+@font-face {
   font-family: paraFont;
   src: url("./assets//fonts/Abel-Regular.ttf");
 }
