@@ -81,8 +81,8 @@ const App = () => {
           </Col>
           <Col xs={12} md={6} className="columns">
             {" "}
-            <Row className="columns title landingColumn d-flex justify-content-center">
-              <h3>
+            <Row className="columns  landingColumn d-flex justify-content-center">
+              <h3 className="title">
                 {" "}
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
                 neque cupiditate aliquid natus, magnam rerum aut dicta dolores?
@@ -90,8 +90,8 @@ const App = () => {
                 fugit libero aliquam!
               </h3>
             </Row>{" "}
-            <Row className="columns para landingColumn d-flex justify-content-center">
-              <p>
+            <Row className="columns  landingColumn d-flex justify-content-center">
+              <p className="para">
                 {" "}
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
                 neque cupiditate aliquid natus, magnam rerum aut dicta dolores?
@@ -99,8 +99,8 @@ const App = () => {
                 fugit libero aliquam!
               </p>
             </Row>{" "}
-            <Row className="columns title landingColumn d-flex justify-content-center">
-              <h4>
+            <Row className="columns  landingColumn d-flex justify-content-center">
+              <h4 className="title">
                 {" "}
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
                 neque cupiditate aliquid natus, magnam rerum aut dicta dolores?

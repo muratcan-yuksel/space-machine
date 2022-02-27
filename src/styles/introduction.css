@@ -1,0 +1,15 @@
+.introductionComponent {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 113, 1) 75%,
+    rgba(45, 110, 204, 1) 100%
+  );
+}
+.title {
+  margin-bottom: 1rem;
+}
+.para {
+  margin-bottom: 1rem;
+}
