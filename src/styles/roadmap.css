@@ -29,6 +29,7 @@
     rgba(22, 32, 47, 1) 100%
   );
   border-radius: 1rem;
+  padding: 1rem;
 }
 .cardTitle {
   margin-bottom: 0 !important;
