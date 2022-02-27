@@ -5,7 +5,7 @@ import "../styles/navbar.css";
 const NavbarComponent = () => {
   return (
     <div className="navbarComponent">
-      <Navbar bg="light" expand="lg">
+      <Navbar fixed="top" bg="light" expand="lg">
         <Container>
           <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

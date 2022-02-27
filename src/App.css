@@ -1,3 +1,10 @@
+@font-face {
+  font-family: titleFont;
+  src: url("./assets/fonts/Megrim-Regular.ttf");
+  font-family: paraFont;
+  src: url("./assets//fonts/Abel-Regular.ttf");
+}
+
 .App {
   text-align: center;
 }
@@ -6,10 +13,16 @@
   margin: 0;
   padding: 0;
 }
+.title {
+  font-family: titleFont;
+}
+.para {
+  font-family: paraFont;
+}
 
 body {
-  color: black !important;
-  background: white !important;
+  color: white !important;
+  background: black !important;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -17,9 +30,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.columns {
-  border: solid;
+/* my styling starts here */
+.landingColumn {
+  margin-bottom: 2rem;
 }
+.landingBtn {
+  margin-bottom: 1rem;
+}
+.columns {
+}
+/* my styling ends here */
 .card {
   align-items: center;
   border-radius: var(--card-border-radius);

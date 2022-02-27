@@ -22,6 +22,7 @@ import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
 import { ThemeProvider, createTheme } from "@material-ui/core";
 //components
 import NavbarComponent from "./components/NavbarComponent";
+import Introduction from "./components/Introduction";
 
 //bootstrap components
 import { Button, Container, Row, Col } from "react-bootstrap";
@@ -73,29 +74,39 @@ const App = () => {
       {/* landing component starts */}
 
       <Container>
+        {/* first row starts  */}
         <Row>
           <Col xs={12} md={6} className="columns">
             <img src={landingImg} alt="" />
           </Col>
           <Col xs={12} md={6} className="columns">
             {" "}
-            <Row className="columns d-flex justify-content-center">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              neque cupiditate aliquid natus, magnam rerum aut dicta dolores?
-              Nisi numquam fugiat placeat delectus eveniet obcaecati ad a fugit
-              libero aliquam!
+            <Row className="columns title landingColumn d-flex justify-content-center">
+              <h3>
+                {" "}
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                neque cupiditate aliquid natus, magnam rerum aut dicta dolores?
+                Nisi numquam fugiat placeat delectus eveniet obcaecati ad a
+                fugit libero aliquam!
+              </h3>
             </Row>{" "}
-            <Row className="columns d-flex justify-content-center">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              neque cupiditate aliquid natus, magnam rerum aut dicta dolores?
-              Nisi numquam fugiat placeat delectus eveniet obcaecati ad a fugit
-              libero aliquam!
+            <Row className="columns para landingColumn d-flex justify-content-center">
+              <p>
+                {" "}
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                neque cupiditate aliquid natus, magnam rerum aut dicta dolores?
+                Nisi numquam fugiat placeat delectus eveniet obcaecati ad a
+                fugit libero aliquam!
+              </p>
             </Row>{" "}
-            <Row className="columns d-flex justify-content-center">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              neque cupiditate aliquid natus, magnam rerum aut dicta dolores?
-              Nisi numquam fugiat placeat delectus eveniet obcaecati ad a fugit
-              libero aliquam!
+            <Row className="columns title landingColumn d-flex justify-content-center">
+              <h4>
+                {" "}
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                neque cupiditate aliquid natus, magnam rerum aut dicta dolores?
+                Nisi numquam fugiat placeat delectus eveniet obcaecati ad a
+                fugit libero aliquam!
+              </h4>
             </Row>{" "}
             <div className="connectButton">
               <ThemeProvider theme={theme}>
@@ -116,7 +127,28 @@ const App = () => {
             </div>
           </Col>
         </Row>
+        {/* first row ends */}
+        <Row>
+          <Col
+            className="columns landingBtn d-flex justify-content-center"
+            xs={12}
+          >
+            {" "}
+            <Button variant="warning">Follow us on Twitter!</Button>{" "}
+          </Col>
+          <Col
+            className="columns landingBtn d-flex justify-content-center"
+            xs={12}
+          >
+            {" "}
+            <Button variant="warning">Join the Discord!</Button>{" "}
+          </Col>
+        </Row>
+        {/* second row ends */}
       </Container>
+      {/* landing component ends */}
+      {/* introduction component */}
+      <Introduction />
     </div>
   );
 };
