@@ -1,5 +1,5 @@
 import "./App.css";
-import { useMemo } from "react";
+import { useMemo, useEffect } from "react";
 
 import Minter from "./Minter";
 
@@ -39,6 +39,9 @@ import { Button, Container, Row, Col } from "react-bootstrap";
 
 //assets
 import landingImg from "./assets/greenplanet.svg";
+// aos library
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const theme = createTheme({
   palette: {
@@ -77,7 +80,10 @@ const App = () => {
     menu.classList.toggle("open-menu");
     console.log("pressed");
   }
-
+  //this aos is for the transition animations
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div id="mainComponent">
       <NavbarComponent />
@@ -118,7 +124,7 @@ const App = () => {
                 fugit libero aliquam!
               </div>
             </Row>{" "}
-            <div className="connectButton">
+            <div className="connectButton" data-aos="zoom-in">
               <ThemeProvider theme={theme}>
                 <ConnectionProvider endpoint={endpoint}>
                   <WalletProvider wallets={wallets} autoConnect>
@@ -158,17 +164,25 @@ const App = () => {
       </Container>
       {/* landing component ends */}
       {/* introduction component */}
-      <Introduction />
+      <div data-aos="slide-up">
+        <Introduction />
+      </div>
       <FirstCollection />
-      <Purpose />
+      <div data-aos="fade-in">
+        <Purpose />
+      </div>
       <SecondCollection />
-      <WhySolana />
+      <div data-aos="zoom-out">
+        <WhySolana />
+      </div>
       <ThirdCollection />
       <Roadmap />
       <FourthCollection />
       <FAQ />
       <FifthCollection />
-      <TheTeam />
+      <div data-aos="fade-out">
+        <TheTeam />
+      </div>
       <Footer />
     </div>
   );

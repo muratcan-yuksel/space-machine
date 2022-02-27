@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footerComponent">
       <Container>
         <Row>
-          <Col className="para footerPara d-flex justify-content-center">
+          <Col className="para footerPara d-flex justify-content-center align-items-center">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
             doloremque possimus ipsum mollitia vero illo labore aliquam porro a
             distinctio, ab officia eum error maiores. Distinctio alias fugit
