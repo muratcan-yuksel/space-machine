@@ -6,8 +6,30 @@ const Purpose = () => {
   return (
     <div className="purposeComponent">
       <Container>
-        <Row>
-          <Col className="title">Our Purpose</Col>
+        <Row className=" ">
+          <Col sm={12} className="title    d-flex justify-content-center">
+            <div className="title purposeTitle"> Our Purpose</div>
+          </Col>
+          <Col sm={12} className="para d-flex justify-content-center">
+            lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
+            dolor sit amet lorem ipsum dolor sit amet{" "}
+          </Col>{" "}
+          <Col sm={12} className="para d-flex justify-content-center">
+            lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
+            dolor sit amet lorem ipsum dolor sit amet{" "}
+          </Col>{" "}
+          <Col sm={12} className="para d-flex justify-content-center">
+            lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
+            dolor sit amet lorem ipsum dolor sit amet{" "}
+          </Col>{" "}
+          <Col sm={12} className="para d-flex justify-content-center">
+            lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
+            dolor sit amet lorem ipsum dolor sit amet{" "}
+          </Col>{" "}
+          <Col sm={12} className="para d-flex justify-content-center">
+            lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
+            dolor sit amet lorem ipsum dolor sit amet{" "}
+          </Col>
         </Row>
       </Container>
     </div>

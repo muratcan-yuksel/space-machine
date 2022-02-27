@@ -25,6 +25,7 @@ import NavbarComponent from "./components/NavbarComponent";
 import Introduction from "./components/Introduction";
 import FirstCollection from "./components/FirstCollection";
 import Purpose from "./components/Purpose";
+import SecondCollection from "./components/SecondCollection";
 
 //bootstrap components
 import { Button, Container, Row, Col } from "react-bootstrap";
@@ -84,13 +85,13 @@ const App = () => {
           <Col xs={12} md={6} className="columns">
             {" "}
             <Row className="columns  landingColumn d-flex justify-content-center">
-              <h3 className="title">
+              <div className="title">
                 {" "}
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
                 neque cupiditate aliquid natus, magnam rerum aut dicta dolores?
                 Nisi numquam fugiat placeat delectus eveniet obcaecati ad a
                 fugit libero aliquam!
-              </h3>
+              </div>
             </Row>{" "}
             <Row className="columns  landingColumn d-flex justify-content-center">
               <p className="para">
@@ -102,13 +103,13 @@ const App = () => {
               </p>
             </Row>{" "}
             <Row className="columns  landingColumn d-flex justify-content-center">
-              <h4 className="title">
+              <div className="title">
                 {" "}
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
                 neque cupiditate aliquid natus, magnam rerum aut dicta dolores?
                 Nisi numquam fugiat placeat delectus eveniet obcaecati ad a
                 fugit libero aliquam!
-              </h4>
+              </div>
             </Row>{" "}
             <div className="connectButton">
               <ThemeProvider theme={theme}>
@@ -153,6 +154,7 @@ const App = () => {
       <Introduction />
       <FirstCollection />
       <Purpose />
+      <SecondCollection />
     </div>
   );
 };
