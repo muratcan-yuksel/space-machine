@@ -23,6 +23,7 @@ import { ThemeProvider, createTheme } from "@material-ui/core";
 //components
 import NavbarComponent from "./components/NavbarComponent";
 import Introduction from "./components/Introduction";
+import FirstCollection from "./components/FirstCollection";
 
 //bootstrap components
 import { Button, Container, Row, Col } from "react-bootstrap";
@@ -149,6 +150,7 @@ const App = () => {
       {/* landing component ends */}
       {/* introduction component */}
       <Introduction />
+      <FirstCollection />
     </div>
   );
 };

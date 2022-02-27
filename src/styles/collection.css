@@ -1,0 +1,11 @@
+.collectionCol {
+  height: auto;
+  width: auto;
+  border: 1rem solid grey;
+}
+
+.collectionImg {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
