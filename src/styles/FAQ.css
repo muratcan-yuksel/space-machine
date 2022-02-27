@@ -1,0 +1,19 @@
+.faqComponent {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 113, 1) 75%,
+    rgba(45, 110, 204, 1) 100%
+  );
+}
+.faqTitle {
+  font-size: 52px;
+  border-bottom: 2px solid;
+}
+.questionTitle {
+  font-size: 40px;
+}
+.questionPara {
+  padding-left: 5rem;
+}
