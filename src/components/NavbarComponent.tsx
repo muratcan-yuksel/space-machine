@@ -12,7 +12,12 @@ const NavbarComponent = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#mainComponent">Home</Nav.Link>
-              <Nav.Link href="#theTeamComponent">Link</Nav.Link>
+              <Nav.Link href="#introductionComponent">Introduction</Nav.Link>
+              <Nav.Link href="#purposeComponent">Our Purpose</Nav.Link>
+              <Nav.Link href="#whySolanaComponent">Why Solana?</Nav.Link>
+              <Nav.Link href="#roadmapComponent">Roadmap</Nav.Link>
+              <Nav.Link href="#faqComponent">FAQ</Nav.Link>
+              <Nav.Link href="#theTeamComponent">The Team</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
