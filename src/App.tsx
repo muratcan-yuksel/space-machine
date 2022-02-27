@@ -33,7 +33,7 @@ import FourthCollection from "./components/FourthCollection";
 import FAQ from "./components/FAQ";
 import FifthCollection from "./components/FifthCollection";
 import TheTeam from "./components/TheTeam";
-
+import Footer from "./components/Footer";
 //bootstrap components
 import { Button, Container, Row, Col } from "react-bootstrap";
 
@@ -169,6 +169,7 @@ const App = () => {
       <FAQ />
       <FifthCollection />
       <TheTeam />
+      <Footer />
     </div>
   );
 };
