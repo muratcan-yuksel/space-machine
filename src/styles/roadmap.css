@@ -9,12 +9,27 @@
 }
 
 .roadmapImgCol {
+  width: auto;
+  height: 20rem;
+  /* border: 1rem solid grey; */
 }
 .roadmapImg {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 .roadmapCard {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(45, 13, 42, 1) 75%,
+    rgba(22, 32, 47, 1) 100%
+  );
 }
 .cardTitle {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 .cardPara {
 }

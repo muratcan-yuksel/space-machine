@@ -1,7 +1,9 @@
 import React from "react";
 import "../styles/roadmap.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
-
+import firstImg from "../assets/Cohete-2016.svg";
+import secondImg from "../assets/fireball.svg";
+import thirdImg from "../assets/moon-half.svg";
 const Roadmap = () => {
   return (
     <div className="roadmapComponent">
@@ -18,18 +20,23 @@ const Roadmap = () => {
           </Col>
           {/* first col group */}
           <Col className="d-flex justify-content-center">
-            <Col xs={12} sm={6} className="roadmapImgCol">
-              <img src="" alt="" className="roadmapImg" />
-            </Col>
-            <Col className="roadmapCard" xs={12} sm={6}>
-              <Col className="cardTitle title">Lorem Ipsum</Col>
-              <Col className="cardPara para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium exercitationem perferendis nulla numquam repellendus
-                dicta ex, rerum aperiam, aliquid ducimus accusamus nihil unde
-                tenetur qui? Totam consequuntur dolore suscipit libero.
+            <Row>
+              {" "}
+              <Col xs={12} sm={6} className="roadmapImgCol">
+                <img src={secondImg} alt="" className="roadmapImg" />
               </Col>
-            </Col>
+              <Col xs={12} sm={6} className="roadmapCard ">
+                <Col className="cardTitle title d-flex justify-content-center">
+                  LOREM IPSUM
+                </Col>
+                <Col className="cardPara para d-flex justify-content-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita adipisci nobis quos rem soluta dolorum aperiam
+                  deserunt dolores similique at sint culpa deleniti a provident,
+                  reprehenderit ducimus iste officia saepe?
+                </Col>
+              </Col>
+            </Row>
           </Col>
           {/* second col group */}
 
