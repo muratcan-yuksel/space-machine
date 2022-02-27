@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const FAQ = () => {
   return (
-    <div className="faqComponent">
+    <div id="faqComponent">
       <Container>
         <Row>
           <Col

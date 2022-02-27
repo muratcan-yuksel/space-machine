@@ -5,7 +5,7 @@ import teamImage from "../assets/moon-half.svg";
 
 const TheTeam = () => {
   return (
-    <div className="theTeamComponent">
+    <div id="theTeamComponent">
       <Container>
         <Row>
           <Row className="title d-flex justify-content-center">

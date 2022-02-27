@@ -4,7 +4,7 @@ import "../styles/purpose.css";
 
 const Purpose = () => {
   return (
-    <div className="purposeComponent">
+    <div id="purposeComponent">
       <Container>
         <Row className=" ">
           <Col sm={12} className="title    d-flex justify-content-center">

@@ -3,7 +3,7 @@ import "../styles/introduction.css";
 
 const Introduction = () => {
   return (
-    <div className="introductionComponent">
+    <div id="introductionComponent">
       <div className="container">
         <div className="row">
           <h2 className="col-12 introTitle title">What are LOREM IPSUM </h2>

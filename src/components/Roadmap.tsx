@@ -6,7 +6,7 @@ import secondImg from "../assets/fireball.svg";
 import thirdImg from "../assets/moon-half.svg";
 const Roadmap = () => {
   return (
-    <div className="roadmapComponent">
+    <div id="roadmapComponent">
       <Container>
         <Row>
           <Col xs={12} className="title d-flex justify-content-center">

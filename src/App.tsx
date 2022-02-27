@@ -79,7 +79,7 @@ const App = () => {
   }
 
   return (
-    <div className="mainComponent">
+    <div id="mainComponent">
       <NavbarComponent />
       {/* landing component starts */}
 

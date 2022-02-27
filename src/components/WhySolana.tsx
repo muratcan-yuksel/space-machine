@@ -4,7 +4,7 @@ import "../styles/whySolana.css";
 
 const WhySolana = () => {
   return (
-    <div className="whySolanaComponent">
+    <div id="whySolanaComponent">
       <Container>
         <Row>
           <Col className="d-flex justify-content-center title" xs={12}>

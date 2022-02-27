@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
 }
-.mainComponent {
+#mainComponent {
   padding-top: 10%;
 }
 .title {
