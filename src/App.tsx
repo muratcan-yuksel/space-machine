@@ -88,10 +88,10 @@ const App = () => {
     <div id="mainComponent">
       <NavbarComponent />
       {/* landing component starts */}
-      <div className="landingPageComponent">
+      <div className="landingPageComponent ">
         <Container>
           {/* first row starts  */}
-          <Row>
+          <Row className="d-flex justify-content-center align-items-center">
             <Col xs={12} md={6} className="columns">
               <img src={landingImg} alt="" />
             </Col>
