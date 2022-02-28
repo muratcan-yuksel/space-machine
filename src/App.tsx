@@ -167,17 +167,17 @@ const App = () => {
       <div data-aos="slide-up">
         <Introduction />
       </div>
-      <FirstCollection />
+      {/* <FirstCollection /> */}
       <div data-aos="fade-in">
         <Purpose />
       </div>
-      <SecondCollection />
+      {/* <SecondCollection /> */}
       <div data-aos="zoom-out">
         <WhySolana />
       </div>
-      <ThirdCollection />
+      {/* <ThirdCollection /> */}
       <Roadmap />
-      <FourthCollection />
+      {/* <FourthCollection /> */}
       <FAQ />
       <FifthCollection />
       <div data-aos="fade-out">

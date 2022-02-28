@@ -1,11 +1,4 @@
 #roadmapComponent {
-  background: rgb(2, 0, 36);
-  background: radial-gradient(
-    circle,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(121, 9, 113, 1) 75%,
-    rgba(45, 110, 204, 1) 100%
-  );
 }
 .roadmapCol {
   margin-bottom: 5rem;
@@ -21,13 +14,7 @@
   object-fit: contain;
 }
 .roadmapCard {
-  background: rgb(2, 0, 36);
-  background: radial-gradient(
-    circle,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(45, 13, 42, 1) 75%,
-    rgba(22, 32, 47, 1) 100%
-  );
+  background: #312f2f9f;
   border-radius: 1rem;
   padding: 1rem;
 }

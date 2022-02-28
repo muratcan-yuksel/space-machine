@@ -1,11 +1,4 @@
 #introductionComponent {
-  background: rgb(2, 0, 36);
-  background: radial-gradient(
-    circle,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(121, 9, 113, 1) 75%,
-    rgba(45, 110, 204, 1) 100%
-  );
   padding: 2rem 0 2rem 0;
 }
 .title {
