@@ -88,80 +88,81 @@ const App = () => {
     <div id="mainComponent">
       <NavbarComponent />
       {/* landing component starts */}
-
-      <Container>
-        {/* first row starts  */}
-        <Row>
-          <Col xs={12} md={6} className="columns">
-            <img src={landingImg} alt="" />
-          </Col>
-          <Col xs={12} md={6} className="columns">
-            {" "}
-            <Row className="columns  landingColumn d-flex justify-content-center">
-              <div className="title">
-                {" "}
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                neque cupiditate aliquid natus, magnam rerum aut dicta dolores?
-                Nisi numquam fugiat placeat delectus eveniet obcaecati ad a
-                fugit libero aliquam!
-              </div>
-            </Row>{" "}
-            <Row className="columns  landingColumn d-flex justify-content-center">
-              <p className="para">
-                {" "}
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                neque cupiditate aliquid natus, magnam rerum aut dicta dolores?
-                Nisi numquam fugiat placeat delectus eveniet obcaecati ad a
-                fugit libero aliquam!
-              </p>
-            </Row>{" "}
-            <Row className="columns  landingColumn d-flex justify-content-center">
-              <div className="title">
-                {" "}
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                neque cupiditate aliquid natus, magnam rerum aut dicta dolores?
-                Nisi numquam fugiat placeat delectus eveniet obcaecati ad a
-                fugit libero aliquam!
-              </div>
-            </Row>{" "}
-            <div className="connectButton" data-aos="zoom-in">
-              <ThemeProvider theme={theme}>
-                <ConnectionProvider endpoint={endpoint}>
-                  <WalletProvider wallets={wallets} autoConnect>
-                    <WalletDialogProvider>
-                      <Minter
-                        candyMachineId={candyMachineId}
-                        connection={connection}
-                        startDate={startDateSeed}
-                        txTimeout={txTimeout}
-                        rpcHost={rpcHost}
-                      />
-                    </WalletDialogProvider>
-                  </WalletProvider>
-                </ConnectionProvider>
-              </ThemeProvider>
-            </div>
-          </Col>
-        </Row>
-        {/* first row ends */}
-        <Row>
-          <Col
-            className="columns landingBtn d-flex justify-content-center"
-            xs={12}
-          >
-            {" "}
-            <Button variant="warning">Follow us on Twitter!</Button>{" "}
-          </Col>
-          <Col
-            className="columns landingBtn d-flex justify-content-center"
-            xs={12}
-          >
-            {" "}
-            <Button variant="warning">Join the Discord!</Button>{" "}
-          </Col>
-        </Row>
-        {/* second row ends */}
-      </Container>
+      <div className="landingPageComponent">
+        <Container>
+          {/* first row starts  */}
+          <Row>
+            <Col xs={12} md={6} className="columns">
+              <img src={landingImg} alt="" />
+            </Col>
+            <Col xs={12} md={6} className="columns">
+              {" "}
+              <Row className="columns  landingColumn d-flex justify-content-center">
+                <div className="title">
+                  {" "}
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolore neque cupiditate aliquid natus, magnam rerum aut dicta
+                  dolores? Nisi numquam fugiat placeat delectus eveniet
+                  obcaecati ad a fugit libero aliquam!
+                </div>
+              </Row>{" "}
+              {/* <Row className="columns  landingColumn d-flex justify-content-center">
+                <p className="para">
+                  {" "}
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolore neque cupiditate aliquid natus, magnam rerum aut dicta
+                  dolores? Nisi numquam fugiat placeat delectus eveniet
+                  obcaecati ad a fugit libero aliquam!
+                </p>
+              </Row>{" "}
+              <Row className="columns  landingColumn d-flex justify-content-center">
+                <div className="title">
+                  {" "}
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolore neque cupiditate aliquid natus, magnam rerum aut dicta
+                  dolores? Nisi numquam fugiat placeat delectus eveniet
+                  obcaecati ad a fugit libero aliquam!
+                </div>
+              </Row>{" "} */}
+            </Col>
+          </Row>
+          <div className="connectButton" data-aos="zoom-in">
+            <ThemeProvider theme={theme}>
+              <ConnectionProvider endpoint={endpoint}>
+                <WalletProvider wallets={wallets} autoConnect>
+                  <WalletDialogProvider>
+                    <Minter
+                      candyMachineId={candyMachineId}
+                      connection={connection}
+                      startDate={startDateSeed}
+                      txTimeout={txTimeout}
+                      rpcHost={rpcHost}
+                    />
+                  </WalletDialogProvider>
+                </WalletProvider>
+              </ConnectionProvider>
+            </ThemeProvider>
+          </div>
+          {/* first row ends */}
+          <Row>
+            <Col
+              className="columns landingBtn d-flex justify-content-center"
+              xs={12}
+            >
+              {" "}
+              <Button variant="warning">Follow us on Twitter!</Button>{" "}
+            </Col>
+            <Col
+              className="columns landingBtn d-flex justify-content-center"
+              xs={12}
+            >
+              {" "}
+              <Button variant="warning">Join the Discord!</Button>{" "}
+            </Col>
+          </Row>
+          {/* second row ends */}
+        </Container>
+      </div>
       {/* landing component ends */}
       {/* introduction component */}
       <div data-aos="slide-up">

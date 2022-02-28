@@ -16,11 +16,12 @@
 .roadmapCard {
   background: #312f2f9f;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 5rem;
 }
 .cardTitle {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
 .cardPara {
+  padding: 1rem 5rem 0 5rem;
 }

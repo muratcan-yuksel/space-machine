@@ -5,8 +5,8 @@ import "../styles/navbar.css";
 const NavbarComponent = () => {
   return (
     <div className="navbarComponent">
-      <Navbar fixed="top" bg="light" expand="lg">
-        <Container>
+      <Navbar fixed="top" bg="dark" expand="lg">
+        <Container className="navbar">
           <Navbar.Brand href="#home">Space-Machine</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

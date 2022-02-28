@@ -18,6 +18,8 @@
 #mainComponent {
   padding-top: 10%;
 }
+.landingPageComponent {
+}
 .title {
   font-family: titleFont;
   font-size: 1.4rem;
@@ -45,6 +47,9 @@ body {
 }
 .landingBtn {
   margin-bottom: 1rem;
+}
+.connectButton {
+  padding: 0 0 5rem 0;
 }
 .columns {
 }
