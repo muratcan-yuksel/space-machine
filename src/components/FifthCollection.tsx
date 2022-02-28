@@ -17,6 +17,15 @@ const FifthCollection = () => {
         </Col>
         <Col className="collectionCol">
           <img className="collectionImg" src={thirdImg} alt="" />
+        </Col>{" "}
+        <Col className="collectionCol">
+          <img className="collectionImg" src={firstImg} alt="" />
+        </Col>
+        <Col className="collectionCol">
+          <img className="collectionImg" src={secondImg} alt="" />
+        </Col>
+        <Col className="collectionCol">
+          <img className="collectionImg" src={thirdImg} alt="" />
         </Col>
       </Row>
 

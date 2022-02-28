@@ -20,12 +20,12 @@
 }
 .title {
   font-family: titleFont;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 700;
 }
 .para {
   font-family: paraFont;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
