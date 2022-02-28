@@ -123,7 +123,21 @@ const App = () => {
                   dolores? Nisi numquam fugiat placeat delectus eveniet
                   obcaecati ad a fugit libero aliquam!
                 </div>
-              </Row>{" "} */}
+              </Row>{" "} */}{" "}
+              <Col
+                className="columns landingBtn d-flex justify-content-center"
+                xs={12}
+              >
+                {" "}
+                <Button variant="warning">Follow us on Twitter!</Button>{" "}
+              </Col>
+              <Col
+                className="columns landingBtn d-flex justify-content-center"
+                xs={12}
+              >
+                {" "}
+                <Button variant="warning">Join the Discord!</Button>{" "}
+              </Col>
             </Col>
           </Row>
           <div className="connectButton" data-aos="zoom-in">
@@ -144,22 +158,7 @@ const App = () => {
             </ThemeProvider>
           </div>
           {/* first row ends */}
-          <Row>
-            <Col
-              className="columns landingBtn d-flex justify-content-center"
-              xs={12}
-            >
-              {" "}
-              <Button variant="warning">Follow us on Twitter!</Button>{" "}
-            </Col>
-            <Col
-              className="columns landingBtn d-flex justify-content-center"
-              xs={12}
-            >
-              {" "}
-              <Button variant="warning">Join the Discord!</Button>{" "}
-            </Col>
-          </Row>
+
           {/* second row ends */}
         </Container>
       </div>
